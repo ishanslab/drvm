@@ -11,8 +11,37 @@ terraform {
 }
 
 provider "azurerm" {
+  subscription_id  = var.subid
+  client_id        = var.clientid
+  client_secret    = var.clientsecret
+  tenant_id        = var.tenantid
+  
   features {}
 }
+
+variable  "subid" {
+
+type = string
+
+    }
+
+variable  "clientid" {
+
+type = string
+
+    }
+
+variable  "clientsecret" {
+
+type = string
+
+    }
+
+variable  "tenantid" {
+
+type = string
+
+    }
 
 # VM Creation part starts here!!!
 # Ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine
