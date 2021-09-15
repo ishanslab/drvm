@@ -184,7 +184,7 @@ resource "azurerm_site_recovery_protection_container_mapping" "container-mapping
 }
 
 resource "azurerm_storage_account" "primary" {
-  name                     = "primaryrecoverycache"
+  name                     = "primaishan321che"
   location                 = azurerm_resource_group.primary.location
   resource_group_name      = azurerm_resource_group.primary.name
   account_tier             = "Standard"
